@@ -16,7 +16,7 @@ var answerArray = [];
 
 
 	document.querySelector("#word").innerHTML = answerArray.join(" ");
-		 console.log(answerArray.join(" "));
+	console.log(answerArray.join(" "));
 
 	document.querySelector("#guessesLeft").innerHTML = guessesRemaining;
 	 }
@@ -72,9 +72,11 @@ document.onkeypress = function(event) {
 
 //If user guesses all the letters in the word, the game stops, gives WiN message then restarts
 	if (guessesRemaining === 0) {
-		document.querySelector("#WinGame").innerHTML = "YOU LOST!!!"
+		document.querySelector("#WinGame").innerHTML = "YOU LOST!!!  Refresh to try again!";
+		
 	}
-	
+
+
 
 }
 
